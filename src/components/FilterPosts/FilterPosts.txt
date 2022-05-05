@@ -1,0 +1,16 @@
+// const getSortedPosts = (sort: string) => {
+//     console.log('Отработала ф-я SORTED getSortedPosts')
+//     if (selectedSort) {
+//         // Для сортировки строк используем ф-ию localeCompare
+//         return [...posts].sort((a: any, b: any) => {return a[sort].localeCompare(b[sort])});
+//     }
+//     return posts;
+// }
+// const sortedPosts = getSortedPosts(selectedSort);
+
+
+// const foo = (a: any,b: any) => {
+//     console.log('Отработала ф-я searchedAndSortedPosts!');
+//     return b.filter(({body}) => body.includes(a));
+// }
+// const searchedAndSortedPosts = useCallback(foo(searchQuery, sortedPosts), [searchQuery, sortedPosts]);

@@ -1,0 +1,8 @@
+.items {
+    border: 1px solid #333;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
