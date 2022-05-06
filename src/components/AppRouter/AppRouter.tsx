@@ -5,6 +5,7 @@ import Post from "../../pages/Post";
 import Home from "../../pages/Home";
 import Login from "../../pages/Login";
 import Users from "../Users/Users";
+import Hooks from "../../pages/Hooks";
 
 const AppRouter = () => {
     const isAuth = true;
@@ -20,6 +21,9 @@ const AppRouter = () => {
                 <>
                     <Route exact={true} path={"/"}>
                         <Home/>
+                    </Route>
+                    <Route exact={true} path={"/hooks"}>
+                        <Hooks/>
                     </Route>
                     <Route exact={true} path={"/posts"}>
                         <Posts/>
