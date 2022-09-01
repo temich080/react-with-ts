@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import useInput from "../hooks/useInput";
 import useHover from "../hooks/useHover";
+import {Link} from "react-router-dom";
 
 const HookUseInput = () => {
     const username = useInput('');
@@ -26,6 +27,12 @@ const HookUseHover = () => {
     );
 }
 
+const HookUseScroll = () => {
+    return (
+        <Link to={"/todos"} className={"navbar__link"}>Use Scroll</Link>
+    );
+}
+
 const Hooks = () => {
 
     return (
@@ -33,7 +40,7 @@ const Hooks = () => {
             <h1>ТОП 5 ХУКОВ</h1>
             <HookUseInput/>
             <HookUseHover/>
-
+            <HookUseScroll/>
         </div>
     );
 };
