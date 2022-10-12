@@ -9,7 +9,7 @@ import Hooks from "../../pages/Hooks";
 import Todos from "../Todos/Todos";
 import Weather from "../../pages/Weather";
 import Chart from "../../pages/Chart";
-import Samurai from "../../pages/Samurai";
+import Samurai from "../../pages/Samurai/Samurai";
 import YupLib from "../../pages/YupLib/YupLib";
 
 const AppRouter = () => {
