@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Input as AntInput, InputRef, DatePicker as AntDatePicker } from 'antd';
+import { Input as AntInput, InputRef, DatePicker as AntDatePicker, TreeSelect as AntTreeSelect } from 'antd';
 
 import { schema } from "./validation";
 
@@ -77,6 +77,11 @@ const Samurai = () => {
           <input
             type="button"
             value="Искать"
+          />
+          <AntTreeSelect
+            showSearch
+            placeholder={'select'}
+            // suffixIcon={false}
           />
         </form>
       </div>
