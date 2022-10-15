@@ -81,7 +81,6 @@ const Samurai = () => {
           <AntTreeSelect
             showSearch
             placeholder={'select'}
-            // suffixIcon={false}
           />
         </form>
       </div>
