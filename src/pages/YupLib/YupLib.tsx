@@ -49,7 +49,6 @@ const Samurai = () => {
           <input
             type="text"
             placeholder="name"
-            // value=""
             className="el3"
             onBlur={validForm}
           />
