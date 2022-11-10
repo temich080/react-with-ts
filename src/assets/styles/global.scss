@@ -1,0 +1,22 @@
+@import 'antd/dist/antd.css';
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  width: 100vw;
+  height: 50px;
+  padding: 0 15px;
+}
+
+.navbar__link {
+  margin-right: 10px;
+}
+
+.app {
+  background-color: cadetblue;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
