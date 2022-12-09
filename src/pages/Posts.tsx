@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import ButtonUI from "../components/UI/button/ButtonUI";
 import FilterPosts from "../components/FilterPosts/FilterPosts";
 import Pagination from "../components/Pagination/Pagination";
-import PostList from "../components/PostList/PostList";
+import PostList from "../components/PostList";
 import Modal from "../components/Modal/Modal";
 import PostForm from "../components/Form/PostForm";
 import {usePosts} from "../hooks/usePosts";
@@ -62,6 +62,7 @@ const Posts = () => {
                 setTotalCount={setTotalCount}
                 limit={limit}
             />
+
             {(isLoading=== true || isLoading === false) &&
                 <PostList posts={searchedAndSortedPosts} isLoading={isLoading} remove={removePost}/>
             }
