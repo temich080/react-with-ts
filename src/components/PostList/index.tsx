@@ -1,9 +1,12 @@
 import React from 'react';
-import {Spin} from 'antd';
-import {useHistory} from 'react-router-dom';
-import {IPost} from "../../types/types";
+import { useHistory } from 'react-router-dom';
+import { Spin } from 'antd';
 
-const PostList = ({posts, isLoading, remove}: {posts: IPost[], isLoading: boolean, remove: any}) => {
+import { IProps } from "./types";
+
+import styles from './styles.module.scss';
+
+const PostList:React.FC<IProps> = ({posts, isLoading, remove}) => {
     const router = useHistory();
 
     if (isLoading) {
@@ -17,7 +20,7 @@ const PostList = ({posts, isLoading, remove}: {posts: IPost[], isLoading: boolea
     }
 
     return (
-        <div key={''}>
+        <div key={''} className={styles.list}>
             <h1 style={{textAlign: "center"}}>Мои посты:</h1>
             {posts.map(p =>
                 <div key={p.id} style={{border: '2px solid blue', marginBottom: '10px'}}>
@@ -39,5 +42,11 @@ const PostList = ({posts, isLoading, remove}: {posts: IPost[], isLoading: boolea
         </div>
     );
 };
+
+PostList.defaultProps = {
+    posts: [],
+    remove: () => null,
+    isLoading: false,
+}
 
 export default PostList;
